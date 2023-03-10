@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Lato';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+    url(../../fonts/Lato/Lato-Regular.ttf) format("ttf"),
+}
+@font-face {
+    font-family: 'Lato';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src:
+    url(../../fonts/Lato/Lato-Medium.ttf) format("ttf"),
+}
+@font-face {
+    font-family: 'Lato';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src:
+    url(../../fonts/Lato/Lato-SemiBold.ttf) format("ttf"),
+}
+@font-face {
+    font-family: 'Lato';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+    url(../../fonts/Lato/Lato-Bold.ttf) format("ttf"),
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src:
+    url(../../fonts/Roboto/Roboto-Medium.ttf) format("ttf"),
+}
