@@ -1,0 +1,24 @@
+
+
+@mixin font($fontfamily, $weight, $size, $height) {
+    font-family: $fontfamily;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin flex($flex-direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+$font_grey: #797B86;
+$font_black: #1F2432;
+$font_black-opacity: #2C3242;
+$font_nav: #33374E;
+$back_grey: #F6F8FA;
+$button_blue: #0069B4;
+$border_grey: #C4C4C4;
+$border_total: #AEB0B6;

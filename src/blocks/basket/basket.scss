@@ -1,0 +1,171 @@
+@import '../_vars.scss';
+
+.basket {
+    display: grid;
+    grid-template-areas:
+        "a a ."
+        "a a b"
+        "c c .";
+
+    &__list {
+        width: 800px;
+        margin: 0;
+        padding: 0;
+        grid-area: a;
+        list-style: none;
+    }
+
+    &__header {
+        @include flex(row, space-between, baseline);
+        margin-bottom: 20px;
+        gap: 22px;
+    }
+
+    &__title {
+        @include font(Lato, 700, 44px, 1.21);
+        color: $font_black;
+        margin: 0;
+    }
+
+    &__subtitle {
+        &_total {
+            margin-right: auto;
+            @include font(Lato, 400, 18px, 1.45);
+            color: $font_grey;
+        }
+
+        &_clear {
+            @include font(Lato, 400, 14px, 1.5);
+            color: $font_grey;
+
+            border-bottom: 1px solid $font_grey;
+        }
+
+    }
+
+    &__elem {
+        @include flex(row, space-between, center);
+        padding: 0;
+        gap: 31px;
+        position: relative;
+        padding: 29px 0 23px 0;
+        border-bottom: 1px solid $border_grey;
+
+        &_img {
+            width: 100px;
+        }
+
+        &_wrapper {
+            position: relative;
+            @include flex(row, center, center);
+        }
+
+        &_minus {
+            background: url(./images/Minus.svg) no-repeat 50% 50%;
+            width: 34px;
+            height: 34px;
+            background-color: #F6F8FA;
+            border-radius: 4px 0 0 4px;
+            border: none;
+            margin-left: 48px;
+        }
+
+        &_amount {
+            @include font(Lato, 400, 14px, 1.5);
+            @include flex(row, center, center);
+            width: 34px;
+            height: 34px;
+            background-color: #F6F8FA;
+            margin: 0 2px;
+        }
+
+        &_plus {
+            background: url(./images/Plus.svg) no-repeat 50% 50%;
+            width: 34px;
+            height: 34px;
+            background-color: #F6F8FA;
+            border-radius: 0 4px 4px 0;
+            border: none;
+            margin-right: 53px;
+        }
+
+        &_price {
+            @include font(Roboto, 400, 12px, 1.45);
+            position: absolute;
+            color: $font_black;
+            bottom: -24px;
+        }
+
+        &_total {
+            @include font(Roboto, 500, 18px, 1.45);
+            margin-right: auto;
+        }
+
+        &_close {
+            position: absolute;
+            top: 29px;
+            right: 1px;
+            background: url(./images/Close.svg) no-repeat 50% 50%;
+            width: 12px;
+            height: 12px;
+            border: none;
+        }
+    }
+
+    &__description {
+        @include flex(column, center, flex-start);
+
+        &_title {
+            margin: 0 0 6px 0;
+            @include font(Lato, 600, 16px, 1.45);
+            color: $font_black;
+
+        }
+
+        &_subtitle {
+            @include font(Lato, 400, 12px, 1.5);
+            margin: 0 0 7px 0;
+            max-width: 263px;
+            color: $font_black-opacity;
+        }
+
+        &_article {
+            @include font(Lato, 400, 14px, 1.5);
+            margin: 0;
+            color: $font_grey;
+        }
+    }
+
+    &__installation {
+        @include flex(row, space-between, center);
+        width: 800px;
+        height: 102px;
+        grid-area: c;
+        box-sizing: border-box;
+        padding: 26px 43px 26px 25px;
+        background-color: $back_grey;
+        border-radius: 5px;
+
+        &_img {
+            width: 28px;
+            height: 28px;
+            padding: 11.15px;
+            background-color: #fff;
+        }
+    }
+}
+
+.container {
+
+    &__title {
+        margin: 0;
+        @include font(Lato, 600, 16px, 1.45);
+        color: $font_black;
+    }
+
+    &__subtitle {
+        margin: 0;
+        @include font(Lato, 400, 14px, 1.5);
+        color: $font_grey;
+    }
+}

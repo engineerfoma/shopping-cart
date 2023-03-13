@@ -1,0 +1,93 @@
+@import '../_vars.scss';
+
+.total {
+    grid-area: b;
+    width: 425px;
+    margin-left: 55px;
+    @include flex(column, center, flex-start);
+    background-color: $back_grey;
+    border-radius: 5px;
+    padding: 35px 30px;
+    box-sizing: border-box;
+
+    &__title {
+        @include font(Lato, 600, 24px, 1.2);
+        margin: 0 0 31px;
+        color: $font_black;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+    }
+
+    &__subtitle {
+        margin: 0;
+        @include font(Lato, 500, 16px, 1.45);
+        color: $font_black;
+
+        &_caption {
+            @include font(Roboto, 400, 16px, 1.45);
+            color: $font_black;
+        }
+
+        &_sum {
+            @include font(Lato, 600, 18px, 1.45);
+            margin: 16px 0 0;
+            color: $font_black;
+        }
+    }
+
+    &__sum {
+        @include font(Roboto, 700, 26px, 1.3);
+        margin-top: 10px;
+    }
+
+    &__buttons {
+        &-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        &-el {}
+    }
+
+    &__elem {
+        margin-bottom: 18px;
+        @include flex(row, space-between, center);
+
+        &-last {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.line {
+    padding-bottom: 29px;
+    margin: 0;
+    border-bottom: 1px solid $border_total;
+}
+
+.button {
+    width: 365px;
+    height: 54px;
+    box-sizing: border-box;
+    @include font(Lato, 600, 18px, 1.45);
+
+    &__sub {
+        background-color: $button_blue;
+        border: none;
+        color: #fff;
+        border-radius: 4px;
+        margin-bottom: 12px;
+        
+        &_fast {
+            color: $button_blue;
+            border: 1px solid $button_blue;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+    }
+}

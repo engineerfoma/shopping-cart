@@ -29,15 +29,16 @@ module.exports = {
                 type: 'asset/resource'
             },
             {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, {
-                    loader: 'css-loader',
-                    options: {
-                        importLoaders: 1
-                    }
-                },
-                    'postcss-loader'
+                test: /\.css$/i,
+                use: [
+                    "style-loader", 'css-loader',
                 ]
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    "style-loader", "css-loader", "sass-loader",
+                ],
             },
         ],
     },
@@ -46,6 +47,6 @@ module.exports = {
             template: './src/index.html'
         }),
         new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin()
+        // new MiniCssExtractPlugin()
     ]
 }
