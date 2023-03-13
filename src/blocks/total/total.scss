@@ -1,7 +1,7 @@
 @import '../_vars.scss';
 
 .total {
-    grid-area: b;
+    grid-area: c;
     width: 425px;
     margin-left: 55px;
     @include flex(column, center, flex-start);
@@ -71,23 +71,25 @@
 }
 
 .button {
-    width: 365px;
-    height: 54px;
+    border-radius: 4px;
     box-sizing: border-box;
     @include font(Lato, 600, 18px, 1.45);
-
+    background-color: $button_blue;
+    
     &__sub {
-        background-color: $button_blue;
         border: none;
         color: #fff;
-        border-radius: 4px;
         margin-bottom: 12px;
-        
+        width: 365px;
+        height: 54px;
+
         &_fast {
+            background-color: #fff;
             color: $button_blue;
             border: 1px solid $button_blue;
             background-color: #fff;
-            border-radius: 4px;
+            width: 365px;
+            height: 54px;
         }
     }
 }

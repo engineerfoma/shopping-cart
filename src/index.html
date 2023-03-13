@@ -33,42 +33,46 @@
         </nav>
         <section class="main">
             <section class="basket">
-                <ul class="basket__list">
-                    <div class="basket__header">
-                        <h1 class="basket__title">Ваша корзина</h1>
-                        <span class="basket__subtitle_total">4 товара</span>
-                        <span class="basket__subtitle_clear link">Очистить корзину</span>
-                    </div>
-                    <li class="basket__elem">
-                        <img src="<%=require('./images/G2H.svg')%>" alt="вытяжное устройство" class="basket__elem_img">
-                        <div class="basket__description">
-                            <h3 class="basket__description_title">Вытяжное устройство G2H</h3>
-                            <p class="basket__description_subtitle">12-72/168 м3/ч /
-                                гидрорегулируемый расход / от датчика присутствия
+                <section class="basket__header">
+                    <h1 class="basket__title">Ваша корзина</h1>
+                    <span class="basket__subtitle_total">4 товара</span>
+                    <span class="basket__subtitle_clear link">Очистить корзину</span>
+                </section>
+                <section class="basket__container">
+                    <ul class="basket__list">
+                        <!-- <li class="basket__elem">
+                            <img src="<%=require('./images/G2H.svg')%>" alt="вытяжное устройство"
+                                class="basket__elem_img">
+                            <div class="basket__description">
+                                <h3 class="basket__description_title">Вытяжное устройство G2H</h3>
+                                <p class="basket__description_subtitle">12-72/168 м3/ч /
+                                    гидрорегулируемый расход / от датчика присутствия
+                                </p>
+                                <span class="basket__description_article">
+                                    Артикул: G2H1065
+                                </span>
+                            </div>
+                            <div class="basket__elem_wrapper">
+                                <button class="basket__elem_minus link"></button>
+                                <div class="basket__elem_amount">1</div>
+                                <button class="basket__elem_plus link"></button>
+                            </div>
+                            <span class="basket__elem_total">12 644 ₽</span>
+                            <button class="basket__elem_close link"></button>
+                        </li> -->
+                    </ul>
+                    <div class="basket__installation">
+                        <input type="checkbox" name="installation" class="basket__installation_checkbox link">
+                        <img src="<%=require('./images/Installation.svg')%>" alt="установка"
+                            class="basket__installation_img">
+                        <div class="basket__installation_container container">
+                            <h3 class="container__title">Установка</h3>
+                            <p class="container__subtitle">Отметьте, если Вам необходима консультация
+                                профессионала по монтажу выбранных товаров.
                             </p>
-                            <span class="basket__description_article">
-                                Артикул: G2H1065
-                            </span>
                         </div>
-                        <div class="basket__elem_wrapper">
-                            <button class="basket__elem_minus link"></button>
-                            <div class="basket__elem_amount">1</div>
-                            <button class="basket__elem_plus link"></button>
-                        </div>
-                        <span class="basket__elem_total">12 644 ₽</span>
-                        <button class="basket__elem_close link"></button>
-                    </li>
-                </ul>
-                <div class="basket__installation">
-                    <input type="checkbox" name="installation" class="basket__installation_checkbox link">
-                    <img src="<%=require('./images/Installation.svg')%>" alt="установка" class="basket__installation_img">
-                    <div class="basket__installation_container container">
-                        <h3 class="container__title">Установка</h3>
-                        <p class="container__subtitle">Отметьте, если Вам необходима консультация
-                            профессионала по монтажу выбранных товаров.
-                        </p>
                     </div>
-                </div>
+                </section>
                 <article class="total">
                     <h3 class="total__title">Итого</h3>
                     <ul class="total__list">
@@ -102,15 +106,56 @@
             <section class="slider">
                 <div class="slider__swiper swiper">
                     <div class="slider__container">
-                        <h2 class="slider__title">Просмотренные товары</h2>
-                        <div class="slider__button-prev swiper-button-prev">
-                            <img src="<%=require('./images/Prev.svg')%>" alt="назад" class="swiper-slide_img">
-                        </div>
-                        <div class="slider__button-prev swiper-button-next">
-                            <img src="<%=require('./images/Next.svg')%>" alt="вперед" class="swiper-slide_img">
+                        <h2 class="slider__container_title">Просмотренные товары</h2>
+                        <div class="slider__buttons">
+                            <img src="<%=require('./images/Prev.svg')%>" alt="назад"
+                                class="swiper-slide_img swiper-slide_img-prev link">
+                            <div class="slider-pagination"></div>
+                            <img src="<%=require('./images/Next.svg')%>" alt="вперед"
+                                class="swiper-slide_img swiper-slide_img-next link">
                         </div>
                     </div>
                     <ul class="slider__wrapper swiper-wrapper">
+                        <!-- <li class="slider__elem swiper-slide">
+                            <img src="<%=require('./images/BXC.svg')%>" alt="ВХС" class="slider__img">
+                            <h3 class="slider__title">BXC</h3>
+                            <p class="slider__subtitle">Вытяжное устройство для
+                                механической системы вентиляции
+                            </p>
+                            <span class="slider__price_rub">12 644</span>
+                            <span class="slider__price_eur">143.3</span>
+                            <button class="slider__button button link">Добавить в корзину</button>
+                        </li>
+                        <li class="slider__elem swiper-slide">
+                            <img src="<%=require('./images/G2H.svg')%>" alt="ВХС" class="slider__img">
+                            <h3 class="slider__title">G2H</h3>
+                            <p class="slider__subtitle">Вытяжное устройство для
+                                механической системы вентиляции
+                            </p>
+                            <span class="slider__price_rub">12 644</span>
+                            <span class="slider__price_eur">143.3</span>
+                            <button class="slider__button button link">Добавить в корзину</button>
+                        </li>
+                        <li class="slider__elem swiper-slide">
+                            <img src="<%=require('./images/GHN.svg')%>" alt="ВХС" class="slider__img">
+                            <h3 class="slider__title">GHN</h3>
+                            <p class="slider__subtitle">Вытяжное устройство для
+                                механической системы вентиляции
+                            </p>
+                            <span class="slider__price_rub">12 644</span>
+                            <span class="slider__price_eur">143.3</span>
+                            <button class="slider__button button link">Добавить в корзину</button>
+                        </li>
+                        <li class="slider__elem swiper-slide">
+                            <img src="<%=require('./images/TDA.svg')%>" alt="ВХС" class="slider__img">
+                            <h3 class="slider__title">TDA</h3>
+                            <p class="slider__subtitle">Вытяжное устройство для
+                                механической системы вентиляции
+                            </p>
+                            <span class="slider__price_rub">12 644</span>
+                            <span class="slider__price_eur">143.3</span>
+                            <button class="slider__button button link">Добавить в корзину</button>
+                        </li>
                         <li class="slider__elem swiper-slide">
                             <img src="<%=require('./images/BXC.svg')%>" alt="ВХС" class="slider__img">
                             <h3 class="slider__title">BXC</h3>
@@ -119,38 +164,38 @@
                             </p>
                             <span class="slider__price_rub">12 644</span>
                             <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button">Добавить в корзину</button>
+                            <button class="slider__button button link">Добавить в корзину</button>
                         </li>
                         <li class="slider__elem swiper-slide">
                             <img src="<%=require('./images/G2H.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">BXC</h3>
+                            <h3 class="slider__title">G2H</h3>
                             <p class="slider__subtitle">Вытяжное устройство для
                                 механической системы вентиляции
                             </p>
                             <span class="slider__price_rub">12 644</span>
                             <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button">Добавить в корзину</button>
+                            <button class="slider__button button link">Добавить в корзину</button>
                         </li>
                         <li class="slider__elem swiper-slide">
                             <img src="<%=require('./images/GHN.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">BXC</h3>
+                            <h3 class="slider__title">GHN</h3>
                             <p class="slider__subtitle">Вытяжное устройство для
                                 механической системы вентиляции
                             </p>
                             <span class="slider__price_rub">12 644</span>
                             <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button">Добавить в корзину</button>
+                            <button class="slider__button button link">Добавить в корзину</button>
                         </li>
                         <li class="slider__elem swiper-slide">
                             <img src="<%=require('./images/TDA.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">BXC</h3>
+                            <h3 class="slider__title">TDA</h3>
                             <p class="slider__subtitle">Вытяжное устройство для
                                 механической системы вентиляции
                             </p>
                             <span class="slider__price_rub">12 644</span>
                             <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button">Добавить в корзину</button>
-                        </li>
+                            <button class="slider__button button link">Добавить в корзину</button>
+                        </li> -->
                     </ul>
                 </div>
             </section>

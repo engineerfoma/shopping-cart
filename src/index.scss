@@ -1,9 +1,10 @@
 @import './vendor/normalize.css';
+@import './blocks/_vars.scss';
 @import '../node_modules/swiper/swiper-bundle.css';
 @import './blocks/page/page.scss';
 @import './blocks/header/header.scss';
 @import './blocks/navigation/navigation.scss';
 @import './blocks/basket/basket.scss';
 @import './blocks/total/total.scss';
-@import './blocks/_vars.scss';
+@import './blocks/slider/slider.scss';
 @import './vendor/fonts/fonts.css';

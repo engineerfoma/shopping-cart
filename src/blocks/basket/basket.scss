@@ -4,14 +4,19 @@
     display: grid;
     grid-template-areas:
         "a a ."
-        "a a b"
-        "c c .";
+        "b b ."
+        "b b c"
+        "b b .";
+
+    &__container {
+        width: 800px;
+        grid-area: b;
+        @include flex(column, flex-start, center);
+    }
 
     &__list {
-        width: 800px;
-        margin: 0;
+        margin: 0 0 30px 0;
         padding: 0;
-        grid-area: a;
         list-style: none;
     }
 
@@ -19,6 +24,8 @@
         @include flex(row, space-between, baseline);
         margin-bottom: 20px;
         gap: 22px;
+        width: 800px;
+        grid-area: a;
     }
 
     &__title {
@@ -37,7 +44,6 @@
         &_clear {
             @include font(Lato, 400, 14px, 1.5);
             color: $font_grey;
-
             border-bottom: 1px solid $font_grey;
         }
 
@@ -50,6 +56,10 @@
         position: relative;
         padding: 29px 0 23px 0;
         border-bottom: 1px solid $border_grey;
+
+        &:last-child {
+            border: none;
+        }
 
         &_img {
             width: 100px;
@@ -140,7 +150,6 @@
         @include flex(row, space-between, center);
         width: 800px;
         height: 102px;
-        grid-area: c;
         box-sizing: border-box;
         padding: 26px 43px 26px 25px;
         background-color: $back_grey;

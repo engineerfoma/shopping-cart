@@ -1,13 +1,25 @@
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 import './index.scss';
 
-Swiper.use([Navigation]);
+Swiper.use([Navigation, Pagination]);
 
 const swiper = new Swiper('.swiper', {
-    loop: true,
-    direction: 'horizontal',
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.swiper-slide_img-next',
+    prevEl: '.swiper-slide_img-prev',
+  },
+  
+  pagination: {
+    el: '.slider-pagination',
+    type: 'fraction',
+  },
+  
+  slidesPerView: 4,
+  
+  loop: true,
+
+  watchOverflow: false,
+
+  slidesPerGroup: 1,
 });
