@@ -1,0 +1,35 @@
+@import '../_vars.scss';
+
+.header {
+    @include flex(row, flex-end, flex-start);
+    &__img {
+    align-self: center;
+    margin-right: 12px;
+    }
+
+    margin-bottom: 56px;
+
+    &__container {
+        @include flex(column, flex-end, flex-start);
+        gap: 0;
+        &_title {
+            @include font(Lato, 400, 14px, 1.45);
+            color: $font_black;
+            margin: 0;
+        }
+
+        &_subtitle {
+            @include font(Lato, 400, 12px, 1.45);
+            color: $font_grey;
+            margin: 0;
+        }
+
+        &_total {
+            @include font(Lato, 400, 12px, 1.45);
+            color: $font_grey;
+            margin: 0;
+        }
+    }
+
+
+}

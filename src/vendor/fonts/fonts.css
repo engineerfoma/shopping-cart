@@ -4,7 +4,8 @@
     font-weight: 400;
     font-display: swap;
     src:
-    url(../../fonts/Lato/Lato-Regular.ttf) format("ttf"),
+    url(../../fonts/Lato/Lato-Regular.woff2) format("woff2"),
+    url(../../fonts/Lato/Lato-Regular.ttf) format("ttf");
 }
 @font-face {
     font-family: 'Lato';
@@ -12,7 +13,8 @@
     font-weight: 500;
     font-display: swap;
     src:
-    url(../../fonts/Lato/Lato-Medium.ttf) format("ttf"),
+    url(../../fonts/Lato/Lato-Medium.woff2) format("woff2"),
+    url(../../fonts/Lato/Lato-Medium.ttf) format("ttf");
 }
 @font-face {
     font-family: 'Lato';
@@ -20,7 +22,8 @@
     font-weight: 600;
     font-display: swap;
     src:
-    url(../../fonts/Lato/Lato-SemiBold.ttf) format("ttf"),
+    url(../../fonts/Lato/Lato-Semibold.ttf) format("ttf"),
+    url(../../fonts/Lato/Lato-Semibold.woff2) format("woff2");
 }
 @font-face {
     font-family: 'Lato';
@@ -29,6 +32,15 @@
     font-display: swap;
     src:
     url(../../fonts/Lato/Lato-Bold.ttf) format("ttf"),
+    url(../../fonts/Lato/Lato-Bold.woff2) format("woff2");
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+    url(../../fonts/Roboto/Roboto-Regular.woff2) format("woff2");
 }
 @font-face {
     font-family: 'Roboto';
@@ -36,5 +48,13 @@
     font-weight: 500;
     font-display: swap;
     src:
-    url(../../fonts/Roboto/Roboto-Medium.ttf) format("ttf"),
+    url(../../fonts/Roboto/Roboto-Medium.woff2) format("woff2");
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+    url(../../fonts/Roboto/Roboto-Bold.woff2) format("woff2");
 }

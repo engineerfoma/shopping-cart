@@ -1,0 +1,31 @@
+@import '../_vars.scss';
+
+.navigation {
+
+    margin-bottom: 60px;
+    
+    &__list {
+        @include flex(row, flex-start , center);
+        list-style: none;
+        gap: 10px;
+        padding: 0;
+    }
+
+    &__elem {
+        @include font(Lato, 400, 14px, 1.5);
+
+        &_main {
+            color: $font_nav;
+
+        }
+
+        &_basket {
+            color: $font_grey;
+        }
+    }
+}
+
+.link:hover {
+    cursor: pointer;
+    opacity: .7;
+}

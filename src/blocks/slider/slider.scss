@@ -1,0 +1,117 @@
+@import '../_vars.scss';
+
+.slider {
+    margin-top: 96px;
+
+    &__container {
+        @include flex(row, space-between, center);
+        margin-bottom: 60px;
+
+        &_title {
+            @include font(Lato, 600, 30px, 1.2);
+            color: $font_black;
+            margin: 0;
+        }
+    }
+
+    &__title {
+        @include font(Lato, 700, 22px, 1.2);
+        color: $font_black;
+        margin: 0 0 10px 0;
+
+        &_hiden {
+            display: none;
+        }
+    }
+
+    &__property {
+        &_hiden {
+            display: none;
+        }
+    }
+
+    &__article {
+        &_hiden {
+            display: none;
+        }
+    }
+
+    &__price-unit {
+        &_hiden {
+            display: none;
+        }
+    }
+
+    &__subtitle {
+        @include font(Lato, 400, 14px, 1.45);
+        color: $font_black;
+        margin: 0 0 59px 0;
+    }
+
+    &-pagination {
+        @include font(Lato, 400, 16px, 1.4);
+        color: $pag;
+    }
+
+    &__button {
+        width: 255px; 
+        height: 52px;
+        border: none;
+        color: #fff;
+        @include font(Lato, 600, 16px, 1.45);
+    }
+
+    &__buttons {
+        @include flex(row, space-between, center);
+        gap: 20px;
+    }
+
+    &__wrapper {
+        @include flex(row, space-between, center);
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__elem {
+        @include flex(column, space-between, flex-start);
+        width: 305px;
+        height: 563px;
+        background-color: $back_grey;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+    &__price {
+        &_rub {
+            @include font(Roboto, 500, 22px, 1.3);
+            color: $font_black;
+        }
+
+        &_eur {
+            @include font(Lato, 400, 16px, 1.45);
+            margin-top: -10px;
+            color: $font_grey;
+        }
+    }
+}
+
+.wrapper-pagination {
+    display: flex;
+    flex-direction: row;
+}
+
+.swiper-current-slide {
+    width: 2.075em;
+}
+
+.swiper-pagination {
+    &-current {
+        @include font(Lato, 400, 24px, 1.5);
+        color: #212121;
+    }
+}
+
+.swiper-slide {
+    width: 305px!important;
+}
