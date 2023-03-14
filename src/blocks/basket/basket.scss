@@ -17,6 +17,7 @@
     &__list {
         margin: 0 0 30px 0;
         padding: 0;
+        width: 100%;
         list-style: none;
     }
 
@@ -119,6 +120,10 @@
             width: 12px;
             height: 12px;
             border: none;
+        }
+
+        &_hiden {
+            display: none;
         }
     }
 

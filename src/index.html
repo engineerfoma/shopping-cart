@@ -13,8 +13,8 @@
         <img src="<%=require('./images/Basket.svg')%>" alt="корзина" class="header__img link">
         <div class="header__container">
             <h2 class="header__container_title link">Ваша корзина</h2>
-            <span class="header__container_subtitle link">3 товара</span>
-            <h3 class="header__container_total link">50 576</h3>
+            <span class="header__container_subtitle link">0 товаров</span>
+            <h3 class="header__container_total link">0 ₽</h3>
         </div>
     </header>
     <main>
@@ -35,31 +35,11 @@
             <section class="basket">
                 <section class="basket__header">
                     <h1 class="basket__title">Ваша корзина</h1>
-                    <span class="basket__subtitle_total">4 товара</span>
+                    <span class="basket__subtitle_total">0 товаров</span>
                     <span class="basket__subtitle_clear link">Очистить корзину</span>
                 </section>
                 <section class="basket__container">
                     <ul class="basket__list">
-                        <!-- <li class="basket__elem">
-                            <img src="<%=require('./images/G2H.svg')%>" alt="вытяжное устройство"
-                                class="basket__elem_img">
-                            <div class="basket__description">
-                                <h3 class="basket__description_title">Вытяжное устройство G2H</h3>
-                                <p class="basket__description_subtitle">12-72/168 м3/ч /
-                                    гидрорегулируемый расход / от датчика присутствия
-                                </p>
-                                <span class="basket__description_article">
-                                    Артикул: G2H1065
-                                </span>
-                            </div>
-                            <div class="basket__elem_wrapper">
-                                <button class="basket__elem_minus link"></button>
-                                <div class="basket__elem_amount">1</div>
-                                <button class="basket__elem_plus link"></button>
-                            </div>
-                            <span class="basket__elem_total">12 644 ₽</span>
-                            <button class="basket__elem_close link"></button>
-                        </li> -->
                     </ul>
                     <div class="basket__installation">
                         <input type="checkbox" name="installation" class="basket__installation_checkbox link">
@@ -78,11 +58,11 @@
                     <ul class="total__list">
                         <li class="total__elem">
                             <p class="total__subtitle">Сумма заказа</p>
-                            <span class="total__subtitle_caption">50 576 ₽</span>
+                            <span class="total__subtitle_caption">0 ₽</span>
                         </li>
                         <li class="total__elem">
                             <p class="total__subtitle">Количество</p>
-                            <span class="total__subtitle_caption">4 шт</span>
+                            <span class="total__subtitle_caption total__subtitle_count">0 <span>шт</span></span>
                         </li>
                         <li class="total__elem line">
                             <p class="total__subtitle">Установка</p>
@@ -90,7 +70,7 @@
                         </li>
                         <li class="total__elem total__elem-last">
                             <p class="total__subtitle_sum">Стоимость товаров</p>
-                            <span class="total__sum">50 576 ₽</span>
+                            <span class="total__sum">0 ₽</span>
                         </li>
                     </ul>
                     <ul class="total__buttons-list">
@@ -116,91 +96,46 @@
                         </div>
                     </div>
                     <ul class="slider__wrapper swiper-wrapper">
-                        <!-- <li class="slider__elem swiper-slide">
-                            <img src="<%=require('./images/BXC.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">BXC</h3>
-                            <p class="slider__subtitle">Вытяжное устройство для
-                                механической системы вентиляции
-                            </p>
-                            <span class="slider__price_rub">12 644</span>
-                            <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button button link">Добавить в корзину</button>
-                        </li>
-                        <li class="slider__elem swiper-slide">
-                            <img src="<%=require('./images/G2H.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">G2H</h3>
-                            <p class="slider__subtitle">Вытяжное устройство для
-                                механической системы вентиляции
-                            </p>
-                            <span class="slider__price_rub">12 644</span>
-                            <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button button link">Добавить в корзину</button>
-                        </li>
-                        <li class="slider__elem swiper-slide">
-                            <img src="<%=require('./images/GHN.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">GHN</h3>
-                            <p class="slider__subtitle">Вытяжное устройство для
-                                механической системы вентиляции
-                            </p>
-                            <span class="slider__price_rub">12 644</span>
-                            <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button button link">Добавить в корзину</button>
-                        </li>
-                        <li class="slider__elem swiper-slide">
-                            <img src="<%=require('./images/TDA.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">TDA</h3>
-                            <p class="slider__subtitle">Вытяжное устройство для
-                                механической системы вентиляции
-                            </p>
-                            <span class="slider__price_rub">12 644</span>
-                            <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button button link">Добавить в корзину</button>
-                        </li>
-                        <li class="slider__elem swiper-slide">
-                            <img src="<%=require('./images/BXC.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">BXC</h3>
-                            <p class="slider__subtitle">Вытяжное устройство для
-                                механической системы вентиляции
-                            </p>
-                            <span class="slider__price_rub">12 644</span>
-                            <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button button link">Добавить в корзину</button>
-                        </li>
-                        <li class="slider__elem swiper-slide">
-                            <img src="<%=require('./images/G2H.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">G2H</h3>
-                            <p class="slider__subtitle">Вытяжное устройство для
-                                механической системы вентиляции
-                            </p>
-                            <span class="slider__price_rub">12 644</span>
-                            <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button button link">Добавить в корзину</button>
-                        </li>
-                        <li class="slider__elem swiper-slide">
-                            <img src="<%=require('./images/GHN.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">GHN</h3>
-                            <p class="slider__subtitle">Вытяжное устройство для
-                                механической системы вентиляции
-                            </p>
-                            <span class="slider__price_rub">12 644</span>
-                            <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button button link">Добавить в корзину</button>
-                        </li>
-                        <li class="slider__elem swiper-slide">
-                            <img src="<%=require('./images/TDA.svg')%>" alt="ВХС" class="slider__img">
-                            <h3 class="slider__title">TDA</h3>
-                            <p class="slider__subtitle">Вытяжное устройство для
-                                механической системы вентиляции
-                            </p>
-                            <span class="slider__price_rub">12 644</span>
-                            <span class="slider__price_eur">143.3</span>
-                            <button class="slider__button button link">Добавить в корзину</button>
-                        </li> -->
                     </ul>
                 </div>
             </section>
         </section>
     </main>
+    <template class="template-basket">
+        <li class="basket__elem">
+            <img class="basket__elem_img">
+            <div class="basket__description">
+                <h3 class="basket__description_title"></h3>
+                <p class="basket__description_subtitle">
+                </p>
+                <span class="basket__description_article">
+                </span>
+            </div>
+            <div class="basket__elem_wrapper">
+                <button class="basket__elem_minus link" id="buttonCountMinus"></button>
+                <div class="basket__elem_amount" id="buttonCountNumber">1</div>
+                <button class="basket__elem_plus link" id="buttonCountPlus"></button>
+                <span class="basket__elem_price"></span>
+            </div>
+            <span class="basket__elem_total" id="total"></span>
+            <button class="basket__elem_close link"></button>
+        </li>
+    </template>
+    <template class="template-gallery">
+        <li class="slider__elem swiper-slide">
+            <img class="slider__img">
+            <h3 class="slider__title"></h3>
+            <span class="slider__title_hiden"></span>
+            <span class="slider__property_hiden"></span>
+            <span class="slider__article_hiden"></span>
+            <span class="slider__price-unit_hiden"></span>
+            <p class="slider__subtitle">
+            </p>
+            <span class="slider__price_rub"></span>
+            <span class="slider__price_eur"></span>
+            <button class="slider__button button link">Добавить в корзину</button>
+        </li>
+    </template>
 </body>
 
 </html>

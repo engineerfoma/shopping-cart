@@ -18,6 +18,28 @@
         @include font(Lato, 700, 22px, 1.2);
         color: $font_black;
         margin: 0 0 10px 0;
+
+        &_hiden {
+            display: none;
+        }
+    }
+
+    &__property {
+        &_hiden {
+            display: none;
+        }
+    }
+
+    &__article {
+        &_hiden {
+            display: none;
+        }
+    }
+
+    &__price-unit {
+        &_hiden {
+            display: none;
+        }
     }
 
     &__subtitle {
